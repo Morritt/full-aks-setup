@@ -21,9 +21,12 @@
         "ms-vscode.azurecli",
         "esbenp.prettier-vscode",
         "github.vscode-github-actions",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.vscode-node-azure-pack",
+        "ms-vscode.azure-account"
       ]
     }
   },
-  "remoteUser": "root"
+  "remoteUser": "root",
+  "postCreateCommand": "/bin/bash ./devcontainer/setup.sh > ~/setup.log 2>&1"
 }

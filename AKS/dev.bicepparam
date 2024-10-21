@@ -18,9 +18,6 @@ param maintenanceConfigurations = [
     maintenanceWindow: {
       durationHours: 4
       schedule: {
-        absoluteMonthly: 'absoluteMonthly'
-        daily: 'daily'
-        relativeMonthly: 'relativeMonthly'
         weekly: {
           dayOfWeek: 'Sunday'
           intervalWeeks: 1
@@ -35,3 +32,6 @@ param maintenanceConfigurations = [
 param managedIdentities = {
   systemAssigned: true
 }
+
+// Can't update this property
+// param nodeResourceGroup = 'rg-aks-node'
